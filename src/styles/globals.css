@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap');
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
+}
+
+:root {
+  --text-color: #cdc9c9;
+  --background-color: #323232;
+  --primary-color: #f44336;
+  --font-family: "roboto", sans-serif;
+  --box-shadow: 8px 2px 8px rgba(0,0,0,0.05);
+}
+
