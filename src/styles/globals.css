@@ -23,6 +23,7 @@ body {
 :root {
   --text-color: #cdc9c9;
   --background-color: #323232;
+  --background-color-dark: #EEF3F6;
   --primary-color: #f44336;
   --font-family: "roboto", sans-serif;
   --box-shadow: 8px 2px 8px rgba(0,0,0,0.05);

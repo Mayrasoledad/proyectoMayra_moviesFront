@@ -1,9 +1,10 @@
 import React from 'react';
 import styles from "./Layout.module.css";
 import Head from 'next/dist/shared/lib/head';
+import Link from "next/link";
 
 
-const Layout = ({ children, title="Pochoclo-Time" }) => {
+const Layout = ({ children, title="Pochoclo-Time", movies }) => {
   return (
     <div className={styles.container}>
       <Head>
@@ -12,7 +13,9 @@ const Layout = ({ children, title="Pochoclo-Time" }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header>
-        <img src="./logo.png" alt="movie icon" width="80px" />
+        <Link href="/">
+        <img src="https://cdn-icons-png.flaticon.com/512/73/73312.png" alt="movie icon" width="80px" />
+        </Link>
       </header>
       <main className={styles.main}>
       {children}
