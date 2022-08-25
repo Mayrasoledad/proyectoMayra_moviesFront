@@ -5,8 +5,8 @@ import styles from "./MovieList.module.css";
 const MovieList = ({ movies }) => {
   const listMovies = movies.map((oneMovie) => {
     return (
-      <div >
-        <li className={styles.list} key={oneMovie._id}>
+      <div key={oneMovie._id}>
+        <li className={styles.list} >
           {oneMovie.title}
           <img src={oneMovie.image} height="300px" width="200px" />
           <Link href={`/movie/${oneMovie._id}`}>

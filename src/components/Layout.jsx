@@ -14,7 +14,7 @@ const Layout = ({ children, title="Pochoclo-Time", movies }) => {
       </Head>
       <header>
         <Link href="/">
-        <img src="https://cdn-icons-png.flaticon.com/512/73/73312.png" alt="movie icon" width="80px" />
+        <img src="https://cdn-icons-png.flaticon.com/512/73/73312.png" alt="movie icon" width="100px" />
         </Link>
       </header>
       <main className={styles.main}>

@@ -1,11 +1,11 @@
 @media (min-width:790px) and (max-width: 1920px){
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        }
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     }
+}
     
 @media (min-width:790px) and (max-width: 1920px){
 .movie_container {

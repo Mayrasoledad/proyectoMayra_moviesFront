@@ -5,11 +5,22 @@ import SearchInput from "../components/SearchInput";
 
 export default function Home({ movies }) {
 
-  return (
+  const [keyword, setKeyword] = useState("");
+
+  const filteredMovies = movies.data.movies.filter((movies) =>
+  movies.title.toLowerCase().includes(keyword)
+  );
+
+  const onInputChange = (e) => {
+    e.preventDefault();
+    setKeyword(e.target.value.toLowerCase());
+  };
+
+  return ( 
     <Layout title="Pochoclo-Time - Home" movies={movies.data.movies}>
       <div>Found {movies.data.movies.length} movies</div>
-      <SearchInput placeholder="Filter by name" />
-      <MovieList movies={movies.data.movies} />
+      <SearchInput placeholder="Filter by name" onChange={onInputChange} />
+      <MovieList movies={filteredMovies} />
       </Layout>
   );
 }

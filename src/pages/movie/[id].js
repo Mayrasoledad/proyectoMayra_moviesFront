@@ -7,15 +7,15 @@ return <Layout title={`Movie - ${movies.data.movie.title}`}>
     
     <div className={styles.movie_container}>
     <h1 className={styles.title}>{ movies.data.movie.title }</h1>
-    <img className={styles.image} src= { movies.data.movie.image } height="1000px"/>
+    <img className={styles.image} src= { movies.data.movie.image } />
     <button className={styles.buttton}>Ver Trailer</button>
     </div>
     
     <div>
-    <div className={styles.director}>Director: { movies.data.movie.director }</div>
-    <div className={styles.year}>Año: { movies.data.movie.year }</div>
-    <div className={styles.genre}>Genero: { movies.data.movie.genre }</div>
-    <div className={styles.description}>Sinopsis: { movies.data.movie.description }</div>
+    <div>Director: { movies.data.movie.director }</div>
+    <div>Año: { movies.data.movie.year }</div>
+    <div>Genero: { movies.data.movie.genre }</div>
+    <div>Sinopsis: { movies.data.movie.description }</div>
     </div>
     
     </div>
