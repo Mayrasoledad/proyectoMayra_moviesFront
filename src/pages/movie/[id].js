@@ -7,7 +7,7 @@ return <Layout title={`Movie - ${movies.data.movie.title}`}>
     
     <div className={styles.movie_container}>
     <h1 className={styles.title}>{ movies.data.movie.title }</h1>
-    <img className={styles.image} src= { movies.data.movie.image } />
+    <img className={styles.image} src= { movies.data.movie.image } width="500px" />
     <button className={styles.buttton}>Ver Trailer</button>
     </div>
     
